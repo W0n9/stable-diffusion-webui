@@ -1,4 +1,14 @@
 #!/bin/bash
+###
+ # @Author: TsungWing 38560218+W0n9@users.noreply.github.com
+ # @Date: 2023-06-02 08:29:21
+ # @LastEditors: TsungWing 38560218+W0n9@users.noreply.github.com
+ # @LastEditTime: 2023-06-02 09:20:59
+ # @FilePath: /sd-webui-aki-v4.1/webui-user.sh
+ # @Description: 
+ # 
+ # Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+### 
 #########################################################
 # Uncomment and change the variables below to your need:#
 #########################################################
@@ -13,7 +23,7 @@
 #export COMMANDLINE_ARGS=""
 
 # python3 executable
-#python_cmd="python3"
+python_cmd="python"
 
 # git executable
 #export GIT="git"
@@ -28,7 +38,7 @@
 #export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
 
 # Requirements file to use for stable-diffusion-webui
-#export REQS_FILE="requirements_versions.txt"
+export REQS_FILE="requirements.txt"
 
 # Fixed git repos
 #export K_DIFFUSION_PACKAGE=""
@@ -44,5 +54,7 @@
 
 # Uncomment to disable TCMalloc
 #export NO_TCMALLOC="True"
+
+export VIRTUAL_ENV=1
 
 ###########################################
